@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>TODO</title>
+	<script src="js/"></script>
+	<style type="text/css">
+		*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #f2f2f2;
+	font-family: sans-serif;
+}
+.wrap{
+	max-width: 1100px;
+	width: 90%;
+	margin: auto;
+}
+.wrap > h1{
+	color: black;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 15px 0px;
+    font-family: arial black;
+}
+.wrap > h1:after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #E0681E ;
+    margin: 20px 0;
+}
+.store-wrapper{
+	display: flex;
+		
+}
+.lista-categorias{
+	display: flex;
+	flex-direction: column;
+	width: 18%;
+
+}
+.lista-categorias .categorias{
+	display: block;
+	width: 90%;
+	padding: 15px 0;
+	margin-bottom: 20px;
+	background: #E0681E ;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+
+}
+.lista-categorias .ct_item-active{
+	background: #6CB1F0;
+
+}
+
+.lista-productos{
+	width: 82%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.lista-productos .producto-item{
+	width: 22%;
+	margin-left: 3%;
+	margin-bottom: 35px;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+
+}
+.lista-productos .producto-item img{
+	width: 100%;
+
+}
+.lista-productos .producto-item a{
+		display: block;
+		width: 100%;
+		padding: 10px 0;
+		background: #6CB1F0;
+		color: black;
+		text-align: center;
+		text-decoration: none;
+}
+input{
+
+    margin-top: 50px; 
+    margin-right: 20px;
+    padding: 3px 5px 0 0;
+    width: 55%;
+}
+
+.img img{
+    position: absolute;
+    top: 10px;
+    left: 110px;
+    visibility:visible;
+    z-index:1;
+    width: 150px;
+    height: 100px;
+}
+
+nav{
+    margin-right: 60px;
+    text-align: right;
+    padding: 50px 50px 0 0;
+}
+
+nav > a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px; 
+}
+
+nav > a:hover{
+    text-decoration: underline; 
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    background: black;  
+   background: #FF8008;  /* fallback for old browsers */
+background-image: radial-gradient(circle at 24.15% 56.93%, #ffcf7b 0, #ffbb6b 25%, #fba156 50%, #ee8744 75%, #e57139 100%);
+
+
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+/*footer*/
+
+
+footer{
+    background:  #414141;
+    padding: 20px 0 15px 0;
+    margin:auto;
+    overflow: hidden;   
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin:auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #f2f2f2;
+    border-bottom: 3px solid #E0681E;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin:20px 0 0 0;
+    color: #9e9797;     
+}
+
+
+
+</style>
+
+</head>
+<body> 
+
+
+    <header>
+         <nav>
+            <a href="../index.html">Página Principal</a>
+            <a href="Galeria.html">Galeria</a>
+            <a href="cotizacion en linea.html">Cotizaciones en linea</a>
+            <a href="contacto.html">Contactenos</a>                        
+        </nav>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg>
+        </div>
+
+    </header> 
+
+
+
+    <div class="img" >
+        <img src="../img/titulo.png">
+    </div>
+    <div class="ContCuerp">
+        
+        <center>
+    <div class="wrap">
+    	<h1>¡BIENVENIDO A LA TIENDA RPM MOTOS!</h1>
+    	<div class="store-wrapper">  
+    		
+                <div class="lista-categorias">
+                    <a href="" target="_self" class="categorias ct_item-active" categoria="todo">TODO </a>
+                    <a href="aceites.html" target="_self" class="categorias "categoria="aceite"> ACEITES</a>
+                    <a href="repuestos.html" target="_self" class="categorias " categoria="repuesto">REPUESTOS </a>
+                    <a href="Accesorios.html" target="_self" class="categorias" categoria="repuesto">ACCESORIOS</a>
+                </div>
+
+
+
+    			<section class="lista-productos">
+    				<div class="producto-item" categorias="aceite"> 
+    					<img src="../img/aceite1.jpg" alt="">
+    					<a href="FormulariodeCompras.html">Aceite Shell Oro<br>Precio: $39.900</a>
+                        <button onclick> Agregar al carrito </button>
+    				</div>
+    				<div class="producto-item" categorias="aceite"> 
+    					<img src="../img/aceite2.jpg" alt="">
+    					<a href="FormulariodeCompras.html">Aceite Repsol Fork<br>Precio:$28.700</a>
+                        <button onclick> Agregar al carrito </button>
+    				</div>
+    				<div class="producto-item" categorias="aceite"> 
+    					<img src="../img/aceite3.jpg" alt="">
+    					<a href="FormulariodeCompras.html">Aceite Motul 800<br>Precio: $90.900</a>
+    				</div>
+    				<div class="producto-item" categorias="aceite"> 
+    					<img src="../img/aceite4.jpg" alt="">
+    					<a href="FormulariodeCompras.html">Aceite Ipone Full Katana<br>Precio: $100.900</a>
+    				</div>
+    				<div class="producto-item" categorias="aceite"> 
+    					<img src="../img/aceite5.jpg" alt="">
+    					<a href="FormulariodeCompras.html">Aceite Motul 7100<br>Precio: $48.900</a>
+    				</div>
+    				<div class="producto-item" categorias="aceite"> 
+    					<img src="../img/aceite6.jpg" alt="">
+    					<a href="FormulariodeCompras.html">Aceite Yamalube<br>Precio: $25.000</a>
+    				</div>
+    				<div class="producto-item" categorias="aceite"> 
+    					<img src="../img/aceite7.jpg" alt="">
+    					<a href="FormulariodeCompras.html">Filtro Aceite Pulsar Ns<br>Precio: $35.900</a>
+    				</div>
+    				<div class="producto-item" categorias="aceite"> 
+    					<img src="../img/aceite8.jpg" alt="">
+    					<a href="FormulariodeCompras.html">Aceite Mobil Moto 4t MX<br>Precio: $24.900</a>
+    				</div>
+    				<div class="producto-item" categorias="aceite"> 
+    					<img src="../img/aceite9.jpg" alt="">
+    					<a href="FormulariodeCompras.html">Aceite Honda Semisintético<br>Precio: $28.400</a>
+    				</div>
+    				<div class="producto-item" categorias="aceite"> 
+    					<img src="../img/aceite10.jpg" alt="">
+    					<a href="FormulariodeCompras.html">Aceite Motul 3000<br>Precio: $99.900</a>
+    				</div>
+    				<div class="producto-item" categorias="aceite"> 
+    					<img src="../img/aceite112.jpg" alt="">
+    					<a href="FormulariodeCompras.html">Aceite Ravenol J1v1002<br>Precio: $474.990 </a>
+    				</div>
+    				<div class="producto-item" categorias="aceite"> 
+    					<img src="../img/aceite12.jpg" alt="">
+    					<a href="FormulariodeCompras.html">Aceite Motocicleta 15w-50<br>Precio: $29.900s</a>
+    				</div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/casco1.jpg" alt="">
+                        <a href="">Casco Moto Integral Pro Tork Newliberty 4 R8 Air Certificado<br>Precio: $39.900</a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/casco2.jpg" alt="">
+                        <a href="#">Casco Doble Propósito Forzza Zz120 Trail Negro Gris Blanco<br>Precio:$389.900</a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/casco3.jpg" alt="">
+                        <a href="#">Casco Abatible Forzza Zz119 Delta Negro Gris Blanco<br>Precio: $389.900</a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/casco4.jpg" alt="">
+                        <a href="#">Casco Integral Forzza Zz36 Zulu Negro Gris Neon<br>Precio: $309.900<br><br></a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/guante1.jpg" alt="">
+                        <a href="#">Guantes Moto Termicos Con Proteccion En Nudillos Y Tactiles<br>Precio: $42.000</a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/guante2.jpg" alt="">
+                        <a href="#">Guantes City Táctiles Termicos Con Reflectivo Moto Bici<br>Precio: $40.000</a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/guante3.jpg" alt="">
+                        <a href="#">Guantes Para Moto 100% Impermeables Y Térmicos <br>Precio: $70.900<br><br></a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/guante4.jpg" alt="">
+                        <a href="#">Guantes Para Invierno Impermeables Moto Ciclismo<br>Precio: $30.900</a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/rodillera1.jpg" alt="">
+                        <a href="#">Rodilleras Articuladas Para Usar En Moto Motocross Bicicross<br>Precio: $70.400</a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/rodillera2.jpeg" alt="">
+                        <a href="#">Set Rodilleras Coderas Moto Probiker Metálica<br>Precio: $86.900<br><br></a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/rodillera3.jpg" alt="">
+                        <a href="#">Rodilleras Para Moto Con Codera Articulada<br>Precio: $74.990<br><br> </a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/rodillera4.jpg" alt="">
+                        <a href="#">Rodilleras Certificadas Moto Proteccion Scoyco K17<br>Precio: $260.900s</a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/barro1.jpg" alt="">
+                        <a href="#">Guardabarro Monobrazo Universal Calcas Reflectivas<br>Precio: $42.900</a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/luz2.jpg" alt="">
+                        <a href="#">Switch Moto Suiche Interruptor On / Off Luces Exploradoras<br>Precio:$6.900</a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/exosto3.jpg" alt="">
+                        <a href="#">Exosto Mofle Sc Project Moto Gp Titanio Bajo Alto Cilindraje<br>Precio: $179.900</a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/tensor4.jpg" alt="">
+                        <a href="#">Tensor Cadena Automático<br>Precio: $39.900<br><br><br></a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/direccional5.jpg" alt="">
+                        <a href="#">Direccional Led Flexible Fija X4<br>Precio: $30.900<br><br></a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/espejo6.jpg" alt="">
+                        <a href="#">Espejos Cafe Racer Semi Ovalados<br>Precio: $50.000<br><br></a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/manigueta7.jpg" alt="">
+                        <a href="#">Maniguetas De Lujo Pulsar Ns 200<br>Precio: $80.900<br><br></a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/manubrio8.jpg" alt="">
+                        <a href="#">Monoshock Amortiguador Para Pulsar Ns 200 Endurance Original<br>Precio: $224.900</a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/direccional9.jpg" alt="">
+                        <a href="#">Direccionales Led De Lujo Par<br>Precio: $20.400<br><br></a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/barro10.jpg" alt="">
+                        <a href="#">Guardabarro Delantero Inferior Xtz 125 Xtz 250 Xr 150 Ttr<br>Precio: $39.900</a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/placa11.jpg" alt="">
+                        <a href="#">Luz Placa - Tvs Apache 160/180/200rtr - Original<br>Precio: $26.990<br><br></a>
+                    </div>
+                    <div class="producto-item" categorias="aceite"> 
+                        <img src="../img/manillares12.jpg" alt="">
+                        <a href="#">2 Manillares, Grips, Mangos Para Moto Protaper<br>Precio: $12.900s</a>
+                    </div>
+                    
+    			</section> 
+    		</div>
+        </div>
+    </div> 
+	
+   <footer>
+     <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Telefono</h4>
+                <p>310 258 3691 <br> 310 258 3792</p>
+            </div>
+            <div class="content-foo">
+                <h4>email</h4>
+                <p>RpmMotos@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicacion</h4>
+                <p>calle 10 # 17-37 <br> Chia-Cundinamarca</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; RPM Motos | Dgel system</h2><br>
+    </footer>
+
+</body>
+</html>
