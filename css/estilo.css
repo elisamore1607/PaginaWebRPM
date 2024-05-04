@@ -1,0 +1,292 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Bell MT";
+}
+
+
+.titulo{
+	text-align: center;
+
+}
+
+body{
+	background:url(imagenes/motog.png);
+	background-size:100vw 100vh;
+	background-repeat: no-repeat; 		
+}
+
+.img img {
+	position: absolute;
+	top: 10px;
+	left: 110px;
+	visibility:visible;
+	z-index:1;
+	width: 130px;
+	height: 110px;
+}
+.img p {
+	position: absolute;
+	top: 85px;
+	left: 160px;
+	visibility:visible;
+	z-index:1;
+	color: #343E4B;
+}
+
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+	min-width: 200px;
+	flex: 1; 
+	padding: 10px;
+	order: 5;
+}
+
+.form{
+	position: absolute;
+	top: 83px;
+	left: 450px;
+	z-index: 1;
+}
+
+.form2{
+	position: absolute;
+	top: 127px;
+	left: 70px;
+	z-index: 1;
+}
+.form3{
+	position: absolute;
+	top: 127px;
+	left: 70px;
+	z-index: 1;
+}
+.form2 {	
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+	min-width: 350px;
+	flex: 1; 
+	padding: 10px;
+	order: 2;
+}
+.form3 {	
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+	min-width: 360px;
+	flex: 1; 
+	padding: 10px;
+	order: 2;
+}
+
+.form_input-2{
+	width:70%;
+	padding: 7px;
+	margin: 6px 0;
+	border: none;
+	border-bottom: 3px solid #EB742C;
+	background: transparent;
+	color: #000;
+}
+
+.form_input-3{
+	width:100%;
+	padding: 7px;
+	margin: 6px 0;
+	border: none;
+	border-bottom: 3px solid #EB742C;
+	background: transparent;
+	color: #000;
+}
+
+
+.form_input {
+	width: 90%;
+	padding: 7px;
+	margin: 6px 0;
+	border: none;
+	border-bottom: 3px solid #EB742C;
+	background: transparent;
+	color: #000;	
+}
+
+.container {
+	width: 100%;
+	max-width: 230px;
+	margin: auto;
+	margin-top:150px; 
+	margin-left: 70px;
+	text-align: center;	
+}
+
+.lbl-menu {
+	background: #EB742C;
+	margin-top: 100px;
+	border-color: #fff;
+	border-width: 1px;
+	border-style: solid;
+
+}
+
+.lbl-menu label {
+	display: block;
+	padding: 10px;
+	color: #fff;
+	cursor: pointer;
+	transition: all 600ms ease;
+	border-color: #fff;
+	border-width: 0.5px;
+	border-style: solid;
+	
+}
+
+.lbl-menu label:hover {
+	background: #EB742C;
+} 
+
+.content{
+	position: absolute;
+	top: 170px;
+	left: 300px;
+	z-index: 1;
+
+}
+
+.selector-container{
+	position: absolute;	
+	top: 110px;
+	left: 80px;
+	z-index: 1;
+	width: 340px;
+	border: none;
+	border-bottom: 3px solid #EB742C;
+	background: transparent;	
+}
+
+
+
+.content .tab1, .tab2, .tab3{
+	height: 390px;
+	width: 900px;
+}
+
+.content div{
+	position: absolute;
+	line-height: 1.8;
+	transition: all 700ms ease;
+	opacity: 0;
+	visibility: hidden;
+	padding:10px;
+	transform: scale(0.90);
+	background: #fff;
+	width: 900px;
+	border: 30px solid rgba(256, 256, 256, .1);
+	box-shadow: 5px 10px 30px #000;
+	
+   
+    
+}
+
+.content h2{
+	position: absolute;
+	left: 250px;
+}
+.content h5{
+	position: absolute;
+	top: 240px;
+	left: 240px;
+	z-index: 1;
+	color: #696464;
+}
+.content .letra{
+	position: absolute;
+	top: 240px;
+	left: 640px;
+	z-index: 1;
+	color: #696464;
+}
+
+
+.content p{
+	position: absolute;
+	top: 100px;
+	left: 150px;
+}
+.content h2, p{
+	width: 400px;
+}
+
+
+
+#radio1,#radio2,#radio3{
+	display: none;
+}
+
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2,
+#radio3:checked ~ .tab3
+{
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+}
+
+.content div:after {
+	position: absolute;
+	content: " ";
+	border-left: 12px solid	transparent;
+	border-right: 12px solid #fff; 
+	border-top: 12px solid	transparent;
+	border-bottom: 12px solid transparent;
+	right: 100%;
+	bottom: 240px;
+}
+.content .tab2:after {
+	bottom: 200px;
+} 
+.content .tab3:after {
+	bottom: 160px;
+} 
+
+.boton{
+	position: absolute;
+	top: 300px;
+	left: 390px;
+	visibility:visible;
+	z-index:1;
+	padding: 5px;
+}
+
+.boton{
+	/background: linear-gradient(102deg, #4551b5 40%, #543fd7 60%);/
+	background: transparent;
+	border: 2px solid#EB742C;  
+	color: #000;
+	display: inline-block;
+	padding: .2rem .5rem;
+	border-radius: .25rem;
+	min-width: 100px;
+	text-decoration: none;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+	animation: pulse 1.3s infinite;
+
+}
+
+@keyframes pulse {
+	0%{
+		transform: scale(.99);
+		box-shadow: 0 0 0 0 rgba(235, 116, 44, .4); 
+	}
+	70%{
+		transform: scale(1);
+		box-shadow: 0 0 0 20px rgba(235, 116, 44, 0); 
+	}
+	100%{
+		transform: scale(.99);
+		box-shadow: 0 0 0 0 rgba(235, 116, 44, 0); 
+	}
+}

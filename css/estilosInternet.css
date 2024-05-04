@@ -1,0 +1,234 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.titulo {	
+	position: relative;
+	top: 10px;
+	left: -50px;
+	visibility:visible;
+	z-index:1;
+	text-align: center;
+	margin-top: 5px;
+		
+}
+.img img{
+	position: absolute;
+	top: 10px;
+	left: 50px;
+	visibility:visible;
+	z-index:1;
+	width: 140px;
+	height: 120px;
+}
+.form {
+	min-width: 400px;
+	flex: 1; 
+	text-align: center;
+	padding: 30px;
+	order: 5;
+}
+
+
+.boton_enviar{
+	position: absolute;
+	top: 50px;
+	left: 1080px;
+	visibility:visible;
+	z-index:1;
+	padding: 5px;
+}
+
+.boton{
+	/*background: linear-gradient(102deg, #4551b5 40%, #543fd7 60%);*/
+	background: transparent;
+	border: 2px solid#EB742C;  
+	color: black;
+	font-weight: bold;
+	display: inline-block;
+	padding: .2rem .5rem;
+	border-radius: .25rem;
+	min-width: 100px;
+	text-decoration: none;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+	animation: pulse 1.3s infinite;
+
+}
+
+.boton2{
+	
+	background: transparent;
+	border: 2px solid#EB742C;  
+	color:black;
+	display: inline-block;
+	padding: .2rem .5rem;
+	border-radius: .25rem;
+	min-width: 100px;
+	text-decoration: none;
+	box-shadow: 0 0 0 0 rgba(235, 116, 44, .5);
+	animation: pulse 1.3s infinite;
+
+}
+
+@keyframes pulse {
+	0%{
+		transform: scale(.99);
+		box-shadow: 0 0 0 0 rgba(235, 116, 44, .4); 
+	}
+	70%{
+		transform: scale(1);
+		box-shadow: 0 0 0 20px rgba(235, 116, 44, 0); 
+	}
+	100%{
+		transform: scale(.99);
+		box-shadow: 0 0 0 0 rgba(235, 116, 44, 0); 
+	}
+}
+
+body{
+	background-image: url(imagenes/moto03.jpg);
+	background-size:100vw 130vh;
+	background-repeat: no-repeat;
+}
+
+.container{
+	width: 120%;
+	max-width: 1420px;
+	margin: auto;
+	margin-top: 20px
+	
+}
+
+.lbl-menu{
+	background: #E0681E ;
+
+}
+
+.lbl-menu label{
+	display: inline-block;
+	padding: 27px;
+	color: #fff;
+	cursor: pointer;
+	transition: all 400ms ease;
+}
+
+.lbl-menu label:hover{
+	background: #F5843F ;
+}
+
+.content{
+	position: relative;
+}
+
+.content div{
+	position: absolute;
+	line-height: 1.8;
+	transition: all 600ms ease;
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(0.90);
+	padding: 30px;
+	background-position: center center;
+	background: radial-gradient(ellipse,#fff, #BABEC2);
+	border: 2px solid #EB742C;
+	padding-bottom: 40px;
+	width: 750px;
+	height: 300px;
+}
+
+#radio1, #radio2, #radio3, #radio4, #radio5{
+	display: none;
+}
+
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2,
+#radio3:checked ~ .tab3,
+#radio4:checked ~ .tab4,
+#radio5:checked ~ .tab5,
+#radio6:checked ~ .tab6
+{
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+}
+.content div:after{
+	position: absolute;
+	content: "";
+	border-left:10px solid
+	transparent;
+	border-right:10px solid
+	transparent;
+	border-top:10px solid
+	transparent;
+	border-bottom:10px solid #BABEC2;
+	bottom: 100%;
+	left: 75px;
+}
+.content .tab2:after{	
+	left: 290px;
+}
+.content .tab3:after{	
+	left: 500px;
+}
+.content .tab4:after{	
+	left: 730px;
+}
+
+.content .tab5:after{	
+	left: 930px;
+}
+
+.content .tab6:after{	
+	left: 1165px;
+}
+
+.slider {
+	margin: auto;
+	width: 100%;
+	height: 445px;
+	overflow: hidden;
+}
+
+.content-slide{
+	background: #fff;
+}
+
+.slider ul{
+	display: flex;
+	padding: 15px;
+	animation: cambio 35s infinite;
+	alternate linear;
+	height: 100%;
+	width: 400%;
+	animation-direction: alternate;
+	animation-timing-function: ease-in;
+}
+
+.slider li{
+	height: 100%;
+	width: 100%;
+	list-style: none;
+}
+.slider img{
+	width: 100%;
+	height:100%;
+}
+
+@keyframes cambio{
+	0%{margin-left: 0;}
+	20%{margin-left: 0;}
+
+	25%{margin-left: -100%;}
+	45%{margin-left: -100%;}
+
+	50%{margin-left: -200%;}
+	70%{margin-left: -200%;}
+
+	75%{margin-left: -300%;}
+	100%{margin-left: -300%;}
+}
+
+.form-line

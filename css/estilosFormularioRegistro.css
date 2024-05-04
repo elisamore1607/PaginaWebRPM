@@ -1,0 +1,38 @@
+h2{
+
+}
+
+}
+main{
+	background-color: #B2B2B2;
+	width: 100%;
+	margin:auto;
+	padding: 40px;
+}
+.cont{
+	width: 90;
+	margin: auto;
+}
+input{
+	border: blue solid 1px;
+	
+}
+fieldset{
+	width: 80%;
+	height: 100%;
+	border:solid gray 2px;
+	text-align: center;
+	margin:auto;
+	margin-top: 120px;
+	padding: 20px;
+	background-color: white;
+}
+.btn-primary{
+	background-color: #FF9532 ;
+	border:solid gray 1px;
+}
+
+body{
+	background: #f2f2f2;
+	font-family: sans-serif;
+}
